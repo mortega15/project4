@@ -183,6 +183,12 @@ upstream gameservice {
 
    **Select an editor:** /bin/nano option
 
-   In your editor you are going to type: */10 * * * * run-one rq requeue --all --queue default >/dev/null 2>&1
+   In your editor you are going to type: 
    
+   */10 * * * * run-one rq requeue --all --queue default >/dev/null 2>&1
+
+   OR
+
+   */10 * * * * run-one /usr/local/bin/rq requeue --all --queue
+
    - Save the edits you made 
