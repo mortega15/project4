@@ -177,7 +177,7 @@ upstream gameservice {
       ]
       ```
 
-   6. Retrying failed jobs
+6. Retrying failed jobs
    **To edit the crontab file enter:** crontab -e 
    **Select an editor:** /bin/nano option
    In your editor you are going to type: */10 * * * * run-one rq requeue --all --queue default >/dev/null 2>&1
